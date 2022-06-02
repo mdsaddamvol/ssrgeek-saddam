@@ -1,0 +1,27 @@
+.main {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  .title {
+    text-align: center;
+    color: gold;
+    margin: 0;
+  }
+  .subTitle {
+    color: rgba($color: gold, $alpha: 0.8);
+    font-size: 18px;
+  }
+  .logos {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}

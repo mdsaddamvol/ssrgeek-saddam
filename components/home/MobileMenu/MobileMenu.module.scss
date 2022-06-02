@@ -1,0 +1,51 @@
+.mobile {
+  background-color: #fff;
+  z-index: 10000000;
+  .close {
+    text-align: end;
+    padding: 22px 20px;
+
+    .icon {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2c2c2c;
+
+      &:hover {
+        color: var(--font-custom-color);
+      }
+
+      @media screen and (min-width: 767px) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.menu {
+  background-color: #fff;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 100vh;
+    padding: 6rem 2rem 3.5rem;
+    transition: all 0.5s ease;
+  }
+
+  .list {
+    li {
+      a {
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        &:hover {
+          color: #ffb001;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2rem;
+    }
+  }
+}
