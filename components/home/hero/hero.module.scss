@@ -1,27 +1,82 @@
-.main {
+.container {
+  background-image: url("/images/hero-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container__div {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+  @media screen and (min-width: 1024px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.hero__main {
   width: 100%;
   height: 100%;
   min-height: 100vh;
+  margin-top: 80px;
+
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: #fff;
-  .title {
-    text-align: center;
-    color: gold;
-    margin: 0;
-  }
-  .subTitle {
-    color: rgba($color: gold, $alpha: 0.8);
-    font-size: 18px;
-  }
-  .logos {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+  justify-content: center;
+
+  .hero__main__content {
+    padding: 2rem 0;
+    display: grid;
+    gap: 5rem;
+
+    .left {
+      text-align: center;
+      .title {
+        text-transform: capitalize;
+        font-size: 2rem;
+        line-height: 1.3;
+        font-weight: 700;
+        color: #484954;
+      }
+
+      .subTitle {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-family: "Roboto mono", monospace;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+
+      .button {
+        button {
+          border-width: 0.1rem;
+          padding: 10px 32px;
+          font-size: 14px !important;
+          color: #fff;
+          background-color: var(--primary-color);
+          border: solid 0.2rem var(--primary-color);
+          border-radius: 2.5rem;
+          cursor: pointer;
+          text-decoration: none;
+          text-align: center;
+
+          font-weight: 500;
+          letter-spacing: 1px;
+          transition: all 0.5s ease;
+
+          &:hover {
+            background-color: transparent;
+            color: #333;
+          }
+        }
+      }
+    }
+
+    .right {
+    }
   }
 }

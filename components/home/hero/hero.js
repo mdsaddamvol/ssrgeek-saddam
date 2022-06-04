@@ -1,12 +1,33 @@
 import styles from "./hero.module.scss";
+import Image from "next/image";
 const Hero = () => {
   return (
-    <div className={styles.main}>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iste
-      neque ipsum hic, temporibus dolores consequatur assumenda quaerat impedit
-      recusandae repellat quidem iure excepturi aliquam laboriosam? Temporibus
-      officia debitis ut?
-      {/* <h1 className={styles.title}>Wellcome to SSR GEEK </h1>
+    <div className={styles.container}>
+      <div className={styles.container__div}>
+        <div className={styles.hero__main}>
+          <div className={styles.hero__main__content}>
+            <div className={styles.left}>
+              <h1 className={styles.title}>
+                Building Innovative Web Applications For Industry Leaders
+              </h1>
+              <h4 className={styles.subTitle}>
+                Web and mobile application development
+              </h4>
+              <div className={styles.button}>
+                <button>Tell us about your project</button>
+              </div>
+            </div>
+            <div className={styles.right}>
+              <Image
+                src="/images/hero-1.svg"
+                height="100%"
+                width="100%"
+                layout="responsive"
+                alt="Hero"
+              />
+            </div>
+          </div>
+          {/* <h1 className={styles.title}>Wellcome to SSR GEEK </h1>
       <p className={styles.subTitle}>we build React , Nextjs Applications</p>
       <div className={styles.logos}>
         <img
@@ -31,6 +52,8 @@ const Hero = () => {
           alt="nodejs"
         />
       </div> */}
+        </div>
+      </div>
     </div>
   );
 };
