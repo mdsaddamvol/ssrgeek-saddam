@@ -22,25 +22,54 @@
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  margin-top: 80px;
-
+  margin-top: 68px;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: 769px) {
+    margin-top: 80px;
+  }
+
   .hero__main__content {
-    padding: 2rem 0;
+    padding: 3rem 0;
     display: grid;
     gap: 5rem;
 
+    @media screen and (min-width: 767px) {
+      padding: 8rem 0;
+    }
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0;
+      align-items: center;
+      gap: 5rem;
+    }
+
     .left {
       text-align: center;
+
+      @media screen and(min-width: 767px) {
+        width: 80%;
+        margin: 0 auto;
+      }
+      @media screen and(max-width: 1024px) {
+        width: 90%;
+        margin: 0 auto;
+      }
+      @media screen and (min-width: 1024px) {
+        width: 100%;
+      }
       .title {
         text-transform: capitalize;
         font-size: 2rem;
         line-height: 1.3;
         font-weight: 700;
         color: #484954;
+
+        @media screen and(min-width: 1024px) {
+          font-size: 3.2rem;
+        }
       }
 
       .subTitle {
@@ -76,7 +105,7 @@
       }
     }
 
-    .right {
-    }
+    // .right {
+    // }
   }
 }

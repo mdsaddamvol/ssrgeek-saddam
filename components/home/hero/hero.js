@@ -1,12 +1,18 @@
 import styles from "./hero.module.scss";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.container__div}>
         <div className={styles.hero__main}>
           <div className={styles.hero__main__content}>
-            <div className={styles.left}>
+            <motion.div
+              whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+              transition={{ duration: 1 }}
+              className={styles.left}
+            >
               <h1 className={styles.title}>
                 Building Innovative Web Applications For Industry Leaders
               </h1>
@@ -16,8 +22,12 @@ const Hero = () => {
               <div className={styles.button}>
                 <button>Tell us about your project</button>
               </div>
-            </div>
-            <div className={styles.right}>
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+              transition={{ duration: 1 }}
+              className={styles.right}
+            >
               <Image
                 src="/images/hero-1.svg"
                 height="100%"
@@ -25,7 +35,7 @@ const Hero = () => {
                 layout="responsive"
                 alt="Hero"
               />
-            </div>
+            </motion.div>
           </div>
           {/* <h1 className={styles.title}>Wellcome to SSR GEEK </h1>
       <p className={styles.subTitle}>we build React , Nextjs Applications</p>
