@@ -14,7 +14,8 @@ const Hero = () => {
               className={styles.left}
             >
               <h1 className={styles.title}>
-                Building Innovative Web Applications For Industry Leaders
+                {/* Building Innovative Web Applications For Industry Leaders */}
+                We Build Fastest Web Applications For Every Type Of Industies
               </h1>
               <h4 className={styles.subTitle}>
                 Web and mobile application development

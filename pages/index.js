@@ -1,5 +1,11 @@
 import Head from "next/head";
-import { Hero, Navbar, OurServices } from "../components";
+import {
+  Hero,
+  OurServices,
+  RecentProjects,
+  TechnologiesUsed,
+  Testimonials,
+} from "../components";
 
 export default function Home() {
   return (
@@ -12,11 +18,13 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+
       <main>
         <Hero />
         <OurServices />
-
+        <RecentProjects />
+        <TechnologiesUsed />
+        <Testimonials />
         <footer></footer>
       </main>
     </div>
