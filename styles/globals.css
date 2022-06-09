@@ -85,9 +85,9 @@ button {
 }
 
 .carousel .control-dots .dot {
-  height: 14px;
-  width: 14px;
-  border-radius: 50%;
+  height: 14px !important;
+  width: 14px !important;
+  border-radius: 50% !important;
 }
 .carousel .control-dots .dot.selected {
   background-color: #fff;
