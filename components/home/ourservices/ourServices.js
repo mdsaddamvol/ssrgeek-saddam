@@ -1,4 +1,4 @@
-import styles from "./OurServices.module.scss";
+import styles from "./ourServices.module.scss";
 import { motion } from "framer-motion";
 
 const OurServices = () => {
