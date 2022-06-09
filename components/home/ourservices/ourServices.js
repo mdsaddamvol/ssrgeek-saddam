@@ -41,11 +41,13 @@ const OurServices = () => {
             </p>
           </div>
           <div className={styles.content__card}>
-            <h3>Next Js Application</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo,
-              provident?
-            </p>
+            <div>
+              <h3>Next Js Application</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo,
+                provident?
+              </p>
+            </div>
           </div>
           <div className={styles.content__card}>
             <h3>Next + Headless Wordpress</h3>
