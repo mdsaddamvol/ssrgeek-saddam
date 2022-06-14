@@ -6,6 +6,8 @@ import {
   TechnologiesUsed,
   Testimonials,
 } from "../components";
+import ContactUs from "../components/home/ContactUs/ContactUs";
+import WhySsrGeek from "../components/home/WhySsrGeek/WhySsrGeek";
 
 export default function Home() {
   return (
@@ -25,7 +27,8 @@ export default function Home() {
         <RecentProjects />
         <TechnologiesUsed />
         <Testimonials />
-        <footer></footer>
+        <WhySsrGeek />
+        <ContactUs />
       </main>
     </div>
   );

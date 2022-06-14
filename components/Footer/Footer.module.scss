@@ -1,0 +1,14 @@
+.main {
+  .container__div {
+    max-width: 968px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    @media screen and (min-width: 1024px) {
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+}
