@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { AiOutlineUser } from "react-icons/ai";
-import { CgMenuLeft } from "react-icons/cg";
 
-import { BsHandbag } from "react-icons/bs";
+import { CgMenuLeft } from "react-icons/cg";
 
 import Link from "next/link";
 import MobileMenu from "../MobileMenu/MobileMenu";
@@ -76,7 +74,9 @@ const Navbar = () => {
               </li>
               <li className={styles.item}>
                 <div className={styles.link}>
-                  <button className={styles.contactUs}>Contact us</button>
+                  <button className={styles.contactUs}>
+                    <Link href="#contact">Contact us</Link>
+                  </button>
                 </div>
               </li>
             </ul>

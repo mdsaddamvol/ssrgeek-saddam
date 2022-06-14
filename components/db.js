@@ -38,3 +38,22 @@ export const technologiesData = [
     title: "TypeScript",
   },
 ];
+
+export const whySsrGeekData = [
+  {
+    img: "/whyssr/quality.svg",
+    title: "High Quality",
+  },
+  {
+    img: "/whyssr/cost.svg",
+    title: "Affordable Cost",
+  },
+  {
+    img: "/whyssr/clean-code.svg",
+    title: "Clean Code",
+  },
+  {
+    img: "/whyssr/support.svg",
+    title: "Friendly Support",
+  },
+];

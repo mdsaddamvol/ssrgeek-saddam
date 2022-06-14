@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className={styles.container}>
+    <div id="home" className={styles.container}>
       <div className={styles.container__div}>
         <div className={styles.hero__main}>
           <div className={styles.hero__main__content}>
@@ -24,11 +24,7 @@ const Hero = () => {
                 <button>Tell us about your project</button>
               </div>
             </motion.div>
-            <motion.div
-              whileInView={{ y: [-100, 0], opacity: [0, 1] }}
-              transition={{ duration: 1 }}
-              className={styles.right}
-            >
+            <div>
               <Image
                 src="/images/hero-1.svg"
                 height="100%"
@@ -36,33 +32,8 @@ const Hero = () => {
                 layout="responsive"
                 alt="Hero"
               />
-            </motion.div>
+            </div>
           </div>
-          {/* <h1 className={styles.title}>Wellcome to SSR GEEK </h1>
-      <p className={styles.subTitle}>we build React , Nextjs Applications</p>
-      <div className={styles.logos}>
-        <img
-          className={styles.logo}
-          width="80px"
-          height="80px"
-          src="react.svg"
-          alt="react"
-        />
-        <img
-          className={styles.logo}
-          width="150px"
-          height="120px"
-          src="nextjs.svg"
-          alt="nextjs"
-        />
-        <img
-          className={styles.logo}
-          width="120px"
-          height="120px"
-          src="node.svg"
-          alt="nodejs"
-        />
-      </div> */}
         </div>
       </div>
     </div>

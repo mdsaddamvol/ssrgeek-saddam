@@ -47,7 +47,7 @@ const Testimonials = () => {
                 <Image
                   width={300}
                   height={300}
-                  src="/images/helios.png"
+                  src="/testimonials/shane.jpg"
                   alt=""
                 />
               </div>
