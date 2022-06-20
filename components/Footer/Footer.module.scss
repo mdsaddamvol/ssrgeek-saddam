@@ -1,4 +1,7 @@
 .main {
+  background-color: rgba(0, 20, 46, 0);
+  padding: 3rem 0;
+
   .container__div {
     max-width: 968px;
     margin-left: 1.5rem;
@@ -9,6 +12,80 @@
     }
     @media screen and (min-width: 1200px) {
       max-width: 1200px;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+
+      column-gap: 10rem;
+      row-gap: 1rem;
+      .logo {
+        h1 {
+          color: var(--primary-color);
+          letter-spacing: 1px;
+          font-weight: 700;
+          // font-style: italic;
+          font-size: 1.5rem;
+          margin-top: 0;
+        }
+        p {
+          color: #525252;
+          font-weight: 500;
+        }
+      }
+      .important {
+        h3 {
+          margin-top: 0;
+          color: #525252;
+          font-size: 1.5rem;
+          margin-bottom: 0.7rem;
+        }
+        ul {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          li:not(:last-child) {
+            margin-right: 30px;
+            line-height: 35px;
+            color: #525252;
+          }
+
+          li {
+            a {
+              color: #525252;
+              font-weight: 500;
+              transition: all 0.4s ease-in;
+
+              &:hover {
+                color: var(--primary-color);
+              }
+            }
+          }
+        }
+      }
+
+      .follow {
+        h3 {
+          margin-top: 0;
+          color: #525252;
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+    .copyright {
+      margin: 0 auto;
+      p {
+        color: #525252;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 3rem;
+        @media screen and (min-width: 1024px) {
+          margin-top: 3rem;
+        }
+      }
     }
   }
 }

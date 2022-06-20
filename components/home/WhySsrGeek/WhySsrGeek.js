@@ -2,15 +2,21 @@ import React from "react";
 import { whySsrGeekData } from "../../db";
 import styles from "./WhySsrGeek.module.scss";
 import Image from "next/image";
+import { motion } from "framer-motion";
 const WhySsrGeek = () => {
   return (
     <div className={styles.main}>
       <div className={styles.container__div}>
         <div className={styles.content}>
           <div className={styles.left}>
-            <div className={styles.left__content}>
+            <motion.div className={styles.left__content}>
               {whySsrGeekData.map((item, index) => (
-                <div className={styles.card} key={`index-${index}`}>
+                <motion.div
+                  whileInView={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.5 }}
+                  className={styles.card}
+                  key={`index-${index}`}
+                >
                   <Image
                     src={item.img}
                     width={40}
@@ -18,9 +24,9 @@ const WhySsrGeek = () => {
                     alt={item.title}
                   />
                   <h3>{item.title}</h3>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
           <div className={styles.right}>
             <h4>
