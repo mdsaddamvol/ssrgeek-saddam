@@ -42,6 +42,7 @@ const ContactUs = () => {
       setText("");
       setPhone("");
     } else {
+      setLoading(false);
       alert("Failed to send email. Please try again.");
     }
   };
